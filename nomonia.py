@@ -9,9 +9,9 @@ model = tf.keras.models.load_model("pneumonia_model.keras")
 # 🔹 Get input shape dynamically
 input_shape = model.input_shape[1:4]
 
-st.set_page_config(page_title="Pneumonia Detection", page_icon="🫁", layout="centered")
+st.set_page_config(page_title="Pneumonia Detection", layout="centered")
 
-st.title("🫁 Pneumonia Detection App")
+st.title(" Pneumonia Detection App")
 st.write("Upload a **chest X-ray image** to predict whether it shows **Pneumonia (Infected)** or **Normal (Uninfected)**.")
 
 # 📤 Image uploader
